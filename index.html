@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <head>
+    <title>simplest-tweeter-feed</title>
+    <style media="screen">
+      body {
+        font-family: sans-serif;
+      }
+      hr {
+        border-style: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="tweets"></div>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+    const socket = io.connect('/');
+    const tweets = document.getElementById('tweets');
+    socket.on('data', (data) => {
+      console.log(data)
+      tweets.innerHTML = tweets.innerHTML + '<p>' + data + '</p>' + '<hr>';
+    });
+    </script>
+  </body>
+</html>
