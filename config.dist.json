@@ -2,7 +2,6 @@
   "consumer_key": "MUST_BE_SPECIFIED",
   "consumer_secret": "MUST_BE_SPECIFIED",
   "access_token_key": "MUST_BE_SPECIFIED",
-  "access_token_secret": "MUST_BE_SPECIFIED"
   "access_token_secret": "MUST_BE_SPECIFIED",
   "track": "MUST_BE_SPECIFIED"
 }
